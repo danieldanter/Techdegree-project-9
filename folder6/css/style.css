@@ -1,0 +1,99 @@
+body {
+    position: relative;
+    padding: 50px;
+    background-color: rgb(243, 233, 233);
+ }
+
+/* *****************Header ************************************** */
+
+header h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+ /* ****************** OVerlay  ******************************** */
+
+ .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4)
+}
+
+.modal {
+    width: 375px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #778;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.modal img{
+    border-radius: 50%;
+}
+
+
+.modal p:nth-of-type(2){
+    padding-bottom: 20px;
+}
+
+.modal p:nth-of-type(3){
+    padding-top: 20px;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+/* ********** Grid Container ************************** */
+
+.grid-container{
+    display:  grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+
+}
+
+.card{
+    display: flex;
+    gap: 15px;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+
+}
+
+.card img{
+    border-radius: 50%;
+}
+
+
+.text-container p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    
+}
+
+.text-container h2 {
+    margin-bottom: 7px;
+    
+}
+
