@@ -19,9 +19,7 @@ section{
 }
 
 
-
-
-/* **** Side bar ****************** */
+/* **** scroll top ****************** */
 .scrollToTop-btn{
     z-index: 999;
     position: fixed;
@@ -195,7 +193,7 @@ header .navigation.active {
     background: #fff;
     top: 0;
     right: 0;
-    width: 380px;
+    width: 200px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -288,7 +286,7 @@ body {
     position: absolute;
     top: 50px;
     left:50%;
-    width: 15px;
+    width: 20px;
     height: 15px;
     border-radius: 50%;
     background: var(--main-Color);
@@ -419,41 +417,30 @@ body {
 
 
 .skills .content .col-right .bar .html:before{
-    width: 95%;
-    background: #e45126;
-
-}
-
-.skills .content .col-right .bar .html:before{
-    width: 95%;
-    background: #e45126;
+    width: 80%;
+    background: var(--main-Color);;
 
 }
 
 .skills .content .col-right .bar .css:before{
-    width: 85%;
-    background: #0c73b8;
+    width: 65%;
+    background: var(--main-Color);;
 
 }
 
 .skills .content .col-right .bar .javascript:before{
-    width: 80%;
-    background: #e3a324;
+    width: 55%;
+    background: var(--main-Color);;
 
 }
 
 .skills .content .col-right .bar .jquery:before{
-    width: 95%;
-    background: #30dd6d;
+    width: 30%;
+    background: var(--main-Color);;
 
 }
 
-.skills .content .col-right .bar .php:before{
-    width: 75%;
-    background: #6d7eb8;
-
-}
-
+/*
 .services .content{
     display: flex;
     justify-content: center;
@@ -504,10 +491,10 @@ body {
     font-weight: 700;
     margin: 10px;
 
-}
+}*/
 
 .work{
-    background: #000016;
+    background: #fff;
 }
 
 
@@ -542,12 +529,45 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    transition: 0.5s ease;
 
 }
 
-.work .content .card .card-img img:hover{
+
+.work .content .card .card-img .image_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.work .content .card .card-img .image_overlay:hover{
     transform: scale(1.2);
+    opacity: 1;
+}
+
+.work .content .card .card-img .image_overlay .image_title{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.work .content .card .card-img .image_overlay .image_description{
+    width: 85%;
+    text-align: center;
+}
+
+.contact {
+    background:  #000016;
 }
 
 .contact .content {
@@ -685,18 +705,17 @@ body {
     opacity: 0.4;
     width: 100%;
     height: 38%;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 100px;
+    border-radius: 10px;
 }
 
-.footer .three{
+/*.footer .three{
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
     border-top: 1px solid #eee;
-}
+}*/
 
 .footer  h6{
     margin-top: 0;
@@ -757,31 +776,7 @@ body {
     font-size: 16px;
 }
 
-
-/*.footer .footer-title{
-    font-size: 20px;
-    font-weight: 600;
-}
-
-
-
-
-
-.footer p{
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.footer p a{
-   color: var(--main-Color);
-   font-weight: 600;
-}*/
-
 /* ************************************* media Queris **************************************** */
-
-
-
-
 
 @media (min-width: 1040px){  
 
@@ -816,8 +811,6 @@ body {
     .section-title {
         font-size: 2.2em;  
     }
-
-    
 
     header .navigation{
         display: inline;
@@ -877,7 +870,7 @@ body {
         padding: 50px;
     }
 
-    /* **** -> to top  ****************** */
+   
     
 }
 
