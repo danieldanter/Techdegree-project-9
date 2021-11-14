@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Techtegree-3 Online Registration form by Daniel Danter.">
+    <title>Online Registration Form | Techtegree-3</title>
+    <link rel="stylesheet" href="style2.css">
+   
+</head>
+<body>
+    <header>
+        <h1>The code Review</h1>
+    </header>
+    <main>
+        <div class="container">
+            
+               
+            <div id="headline">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing in your inbox</p>
+                 
+            </div>
+
+            
+            
+            <form>
+                <fieldset id="field">
+  
+                        <legend id="contact"> Contact Information</legend>
+
+                        <div class="row">
+                            <label for="name"> Full Name</label>                       
+                            <input type="text" id= "name" name ="user-name" placeholder="Required ">
+                        </div>
+                        <div class="row">
+                            <label for="email">Email Address</label>
+                            <input type="email" id = "email" name="user-email" placeholder="Required ">
+                        </div>
+                        <div class="row">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="user-phone">
+                        </div>
+                        <div class="row">
+                            <label for="address1">Street Adress</label>
+                            <input type="text" id ="address1" name ="user-address1">
+                        </div>
+                        <div class="row">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name = "user-city">
+                        </div>
+                        <div class="row">
+                            <label for="state">State</label>
+                            <select name="user_stage" id="state">
+                        
+                            
+                                <option value="android_developer">Choose State</option>
+                                <option value="ios_developer">California</option>
+                                <option value="MObile designer">Florida</option>
+                                <option value="MObile designer">........</option>
+                            </select>
+                        </div>
+                        <div class="zip">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="user-zip">
+                        </div>  
+                                    
+                </fieldset>
+
+                <fieldset>
+                    <legend id="newsletter">Newsletter</legend>
+
+                    <label>Select the newesletter you would like to receive</label>
+                    <div class="inline-field">
+                        <input type="checkbox" id="html_news" value="interst_html" name="user_interest">
+                        <label for="html_news" >HTML News</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" id="css-news" value="interst_css" name="user_interest">
+                        <label for="css-news">CSS News</label>
+                    </div>
+                    
+                    <div class="inline-field">
+                        <input type="checkbox" id="javascript_news" value="interst_javascript" name="user_interest">
+                        <label for="javascript_news" >Javascript News</label>
+                    </div>
+                    
+                    <div id="nwesletter-format">
+                        <label>Newsletter format</label>
+                        <div class="html-field">
+                            <input type="radio" id="html-format" value="html" name="user_format">
+                            <label for="html-format" class="light">HTML</label>
+                        </div>
+                        <div class="html-field">
+                            <input type="radio" id="text-format" value="plain_text" name="user_format">
+                            <label for="text-format" class="light">Plain text</label>
+                        </div>
+                    </div>
+
+                    <div class="topics-field">
+                        <label for="topics">Other topics you'd like to hear about</label>
+                        <textarea name="user_topics" id="topics" ></textarea>
+                    </div>
+
+
+                </fieldset>
+                <button type="submit">Sign Up</button>
+
+            </form>
+            
+            
+        </div>
+    </main>
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+</body>
+
+</html>

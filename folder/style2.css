@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+body {
+    background: #fff;
+    color: #354;
+    font-family: 'Merriweather','Nunito', sans-serif;
+}
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    margin: -10px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #32373a;
+}
+
+
+#headline {
+    text-align: center;
+    border-bottom: 3px solid black;
+    margin-bottom: 30px;
+}
+
+#headline h2{
+    font-weight: bold;
+}
+
+#headline p{
+    padding-bottom: 30px;
+    margin-bottom: 3px;
+    border-bottom: 9px solid black;
+}
+
+#contact{
+    font-weight: bold;
+}
+
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder
+  {
+      text-align: right;
+      font-style:italic;
+      
+  }
+
+  input[type=text]:focus, 
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus,
+  select:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1); 
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
+
+.inline-field input,
+.inline-field label {
+  display: inline-block;
+  margin-bottom: 0; 
+  vertical-align: middle; 
+}
+
+#zip{
+    width: 50%; 
+    height: 50px; 
+    padding: 1px
+}
+
+
+  select {
+    padding: 6px;
+    height: 50px;
+    border-radius: 2px;
+  }
+  
+  button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #09f8d8;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    box-shadow: none;
+    width: 100%;    
+    margin-bottom: 10px;
+  }
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  #newsletter{
+      border-top: 5px solid black;
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      font-weight: bold;
+      
+  }
+
+  .inline-field  {
+    padding-bottom: 15px;
+  }
+
+  #nwesletter-format{
+    margin-top: 30px;
+  }
+
+  .html-field{
+    margin-top: 15px;
+  }
+
+  
+  .topics-field {
+    margin-top: 30px;
+    
+  }
+
+  footer p{
+      font-style:italic ;
+      text-align: center;
+  }
+
+  
+/*************** media Query ***************************** */
+
+@media screen and (min-width: 768px) {
+  
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    
+    .zip {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select{      
+       width: 80%;     
+    }
+
+    .topics-field textarea{
+        width: 100%; 
+    }
+
+    
+  
+  }
+  
